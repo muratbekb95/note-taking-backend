@@ -4,7 +4,7 @@
 CREATE TABLE IF NOT EXISTS `note_taking_backend`.notes (
     id BIGINT auto_increment NOT NULL,
     note varchar(300) NOT NULL,
-    created_on DATETIME NULL,
+    created_on DATETIME,
     update_on DATETIME NULL,
     CONSTRAINT note_PK PRIMARY KEY (id)
     ) ENGINE=InnoDB
